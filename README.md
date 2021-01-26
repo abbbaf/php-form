@@ -73,7 +73,7 @@ The custom error is a string which can contain two placeholders:
 [:param:] which is the value of first parameter of the above methods.
 
 An error message example of max() method.
-'[:label:] must have no more then [:param:] characters.
+'[\:label\:] must have no more then [:param:] characters.
 
 
 
