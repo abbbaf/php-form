@@ -69,11 +69,11 @@ label($label_name) - Sets the label name which will be displayed in the error me
 ### Create a custom error:
 
 The custom error is a string which can contain two placeholders:
-[:label:] for label sets by the label() method.
+`[:label:]` for label sets by the label() method.
 [:param:] which is the value of first parameter of the above methods.
 
 An error message example of max() method.
-'[ : label : ] must have no more then [:param:] characters.
+`[:label:]` must have no more then [:param:] characters.
 
 
 
