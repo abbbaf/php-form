@@ -3,7 +3,7 @@ This module allows to easily create and validate input fields.  It also includes
 
 ## How to use?
 
-1. Create an array of InputSchema objets:
+### 1. Create an array of InputSchema objets:
 
 Creating one object:
 $schema = new InputSchema($input_field_name, $error (optional));
@@ -13,25 +13,25 @@ The $error contains a string of the error message in case the value of the input
 $input_schema_array = [ $schema.min(5].max(40) ];
 (See list of supported methods below).
 
-2. Create a form object:
+### 2. Create a form object:
 
 $form = new Form($input_schema_array)
 If method is 'get' then the constructor must have a boolean false as a second argument.
 
 Inside your form you must call $form->csrf
 
-3. Check if the form is valid and set all errors;
+### 3. Check if the form is valid and set all errors;
 
 $form->validate() 
 This method will return false if method any of the schemas in the $input_schema_array failed
 or if csrf token check faield.
 
-4. Create the form fields.
+### 4. Create the form fields.
 
 $form->fields - An associative array for all form fields and values.  ['field name' => 'field value'] .
 $form->errors - An associative array of all errors.  ['field_name' => [errors_array] ].
 
-5. CSRF protection.
+### 5. CSRF protection.
 
 $form->csrf()
 Execute the above method inside your form:
