@@ -18,6 +18,7 @@ The $error contains a string of the error message in case the value of the input
 ### 2. Create a form object:
 
 `$form = new Form($input_schema_array);`
+
 If method is 'get' then the constructor must have a boolean false as a second argument.
 
 Inside your form you must call $form->csrf
@@ -25,8 +26,9 @@ Inside your form you must call $form->csrf
 ### 3. Check if the form is valid and set all errors;
 
 `$form->validate();`
+
 This method will return false if method any of the schemas in the $input_schema_array failed
-or if csrf token check faield.
+or if **csrf token** check faield.
 
 ### 4. Create the form fields.
 
