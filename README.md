@@ -6,11 +6,13 @@ This module allows to easily create and validate input fields.  It also includes
 ### 1. Create an array of InputSchema objets:
 
 Creating one object:
+
 `$schema = new InputSchema($input_field_name, $error (optional));`
 
 The $error contains a string of the error message in case the value of the input field is empty.
 
 `$input_schema_array = [ $schema.min(5].max(40) ];`
+
 (See list of supported methods below).
 
 ### 2. Create a form object:
